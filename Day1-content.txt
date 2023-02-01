@@ -1,0 +1,39 @@
+DAY1:
+
+PYTHON is famous in the market and it is called as language of future.it supports current and upcoming technologies.
+Mediums:
+Idle(Integrated Development Learning Enivironment)
+Jupiter Notebook,Anaconda ,Thony,VSU(Visual Studio Code)
+Commandprompt is also called as Shell.
+Program in python called as Script.
+--printing names unicode
+--type conversions
+--variables and their rules
+--datatypes:
+numerical: int,float,complex,boolean(tru,false)
+sequence:string,list,tuple,dictionary
+--examples on id(), isinstance()
+--operators preceedence and associativity law:
+Evry operator has its own priority we can use BODMAS rule
+If there is same priority operators present in the expression evaluation happens left to right and assgnmnt right to left
+
+num1=int(input("Enter the positive number"))
+num2=float(input("Emter the negative float number:"))
+print("Result:",num1*num2)
+
+#75kg kumar bought and gave half to sam now sam gives half of it to kumar.candies kumar is having
+kumar=75
+sam=(kumar/2)
+kumar=75-sam
+kumar=kumar+(sam/2)
+print(kumar)
+print(sam/2)
+
+num=36.32*(3)
+total=num+56.19
+final=total-10
+print(final)
+
+operators:
+1.ARITHMETIC OPERATORS:+,-,*,/,//(modulus-quotient in int ),%(remainder)
+2.RELATIONAL OPERATORS:<,>,<=,>=.==,!=

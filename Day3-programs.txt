@@ -1,0 +1,80 @@
+#climate conditions
+t=int(input("enter the temp value: "))
+print("Temperature is:",t)
+if t>45:
+    print("the climate is hotest")
+elif 40<t<45:
+    print("climate is hot")
+elif 25<t<40:
+    print("climate is moderate")
+elif 10<t<25:
+    print("climate is cold")
+elif t<10:
+    print("chill")
+
+#printing even numbers from given list of elements
+size=int(input("Enter no.of elements in List"))
+L=[]
+for i in range(size):
+    ele=int(input("Elements: "))
+    L.append(ele)
+print(L)
+for j in L:
+    if(j%2==0):
+        print(j)
+#sum and average
+L=[4.5,3.5,2.3,6.7,4.9]
+print(L)
+sum=0
+for i in range(len(L)):
+    sum=sum+L[i]
+print(sum)
+print(sum/len(L))
+
+#using size
+size=int(input("Enter Size: "))
+l=[]
+p=1
+s=0
+for i in range(size):
+    ele=int(input("enter values: "))
+    l.append(ele)
+print(l)
+for i in range(size):
+    p=p*l[i]
+    s=s+l[i]
+if(p<750):
+    print("product: ",p)
+else:
+    print("sum",s)
+    
+#without using size
+a=list(map(int,input("Enter: ").split()))
+print(a)
+p=1
+s=0
+for i in a:
+    p=p*i
+    s=s+i
+if(p<=750):
+    print("product: ",p)
+else:
+    print("sum",s)
+
+#can cretae elements from elements
+numbers=[elements for elements in "Great Afternoon"]
+print(numbers)
+#can create list using list
+L=["hyd","chennai","vijayawada","vizag"]
+city=[]
+for n in L:
+    if "v" in n:
+        city.append(n)
+print(city)
+L1=[2**x for x in range(2,10)]
+print(L1)
+L2=[a for a in range(100,201,20)]
+print(L2)
+L3=[1,2,3,4,5,6]
+L4=[i for i in L3 if (i<5)]
+print(L4)

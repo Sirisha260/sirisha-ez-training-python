@@ -1,0 +1,255 @@
+day 2 programs 
+1.CHECK WHETHER THE NUMBER IS 500 OR NOT
+
+num=int(input("enter the number"))
+if(num==500):
+   print("the number is 500")
+else:
+   print("the number is not 500")
+2.DIVISIBLE BY BOTH 2 AND 5 OR NOT
+
+n=int(input("enter the number"))
+if((n%2==0) and (n%5==0)):
+    print("the number {} is divisible by both 2 and five".format(n))
+elif((n%2==0)and (n%5!=0)):
+     print("the number {} is divisible by 2 but not with 5".format(n))
+elif((n%2!=0) and (n%5==0)):
+    print("the number {} is  divisible by 5 but ot with 2".format(n))
+else:
+    print ("the number{} is not divisible by both 2 and 5".format(n))
+3.DIVISIBLE BY 11 OR NOT
+
+n=int(input("enter the number"))
+if(n%11==0):
+    print("the number {} is divisible by 11".format(n))
+else:
+    print("the number {} is not divisible by 11".format(n))
+4.PRINTING HOLLOW HEART
+ #hollowheart
+print("  ##       ##    ")
+print(" #     #     #   ")
+print("  #         #    ")
+print("   #       #     ")
+print("    #     #      ")
+print("     #   #       ")
+print("       #         ")
+
+
+for row in range(6):
+    for col in range (7):
+        if(row==0 and col%3!=0)or (row==1 and col%3==0) or (row-col==2)or(row+col==8):
+            print( "#",end="")
+        else:
+            print(" ",end="")
+    print()       
+            
+5. PRINTING TRI SHAPE
+print("###############")
+print("  ###########   ")
+print("    #######     ")
+print("      ###      ")
+print("       #       ")
+
+
+a=int(input("enter the num"))
+for i in  range(a):
+    space =" "*i
+    print(space+("# ")*a)
+    a=a-1
+ 6. MULTIPLE INPUTS IN SINGLE LINE
+#single line multiple input
+n1,n2=int(input("ENTER THE FIRST NUMBER:")),int(input("ENTER THE SECOND NUMBER:"))
+print(n1)
+print(n2)
+print(n1,n2)
+#split using dot
+a,b= input("numbes are ").split(".")
+print(a,b)
+print(a+b)
+print(int(a)+int(b))
+#split using space
+a,b= input("numbes are ").split(" ")
+print(a,b)
+print(a+b)
+print(int(a)+int(b))
+#using  list
+n=int(input("size"))# another method using size
+a=list(map(int,input("numbers").strip().split()))# strip remove any empty spaces # method without using size direct mapping in given list
+print(a)
+7. BIGGESET OF TWO NUMBERS 
+num1,num2=int(input("enter the number")),int(input("enter the number"))
+print( "the numbers are :",num1,num2)
+if(num1>num2):
+        print("the number 1 is greater ")
+elif(num1>num2):
+        print("the number 2 is greater")
+#else
+       # print(both numbers are equal")
+
+
+8. BIGGEST OF THREE NUMBERS 
+#method1
+print("method1")
+
+num1,num2,num3=int(input("enter the number")),int(input("enter the number")),int(input("enter the number"))
+print( "the numbers are :",num1,num2,num3)
+if(num1>num2) and (num1>num3) :
+        print("the number 1 is greatest ",num1)
+elif(num3>num1) and (num3>num2):
+         print("the number 3 is greatest ",num3)
+else:
+  print("the number 2 is greatest",num2)
+
+
+print( )#just spacing
+print()
+
+
+print("method2")
+
+
+num1,num2,num3=int(input("enter the number")),int(input("enter the number")),int(input("enter the number"))
+print( "the numbers are :",num1,num2,num3)
+if(num1>num2):
+    if(num3>num1):
+      print("the number 3 is greatest ",num3)
+    else:
+      print("the number 1 is greatest ",num1)
+else:
+    if(num2>num3):
+       print("the number 2 is greatest ",num2)
+    else:
+        print(" the number 3 is greatest",num3)
+9.RANDOM GAME 
+import random
+n=random.randrange(1,50)
+guess=int(input("enter the number"))
+while n!=guess:
+    if guess < n:
+        print("TOO LOW:")
+        guess=int(input("enter the number"))
+    elif guess>n:
+        print("TOO HIGH")
+        guess=int(input("enter the number"))
+    else:
+        break
+    
+print("you guessed it right")
+ 10. USING OF SEP AND END 
+print("it's", "a","good","day")
+print("all", "is","good")
+print("it's", "a","good","day",end="")#without spacing
+print("all", "is","good")
+print("it's", "a","good","day",end="###")#with any symbols seperation
+print("all", "is","good")
+print("it's", "a","good","day",end=" ")#with spacing
+print("all", "is","good")
+print("it's", "a","good","day",sep="#")#with using sep spacing
+print("all", "is","good")
+print(  )
+print(  )
+print(  )
+#actuall program
+print("it's", "a","good","day",end="")
+print("all", "is","good",sep="***",end="")
+print("joy")
+11. BITWISE OPERATIONS
+num1,num2=int(input("enter the first  number")), int(input("enter the second number"))
+print(num1,num2)
+print(num1&num2)
+print(num1|num2)
+print(~num1,~num2)
+print(num1^num2)#same zero, diff one
+print(num1>>2)#right shift #divide by power of 2
+print(num1<<2)#leftshift #multiples with power of 2
+12. PRINTING ODD NUMBERS USING WHILE LOOP
+i=1
+print("the odd numbers are:")
+while(i%2!=0 & i<=30):
+      print(i)
+      i+2
+
+i=1
+print("the odd numbers are:")
+while i<=30:
+      if(i%2!=0):
+         print(i)
+      i=i+1
+13.PRINTING EVEN NUMBERS USING WHILE LOOP
+i=1
+print("the  even numbers are:")
+while i<=20:
+      print(i*2)
+      i=i+1  
+14. PROD OF 10 NUMBERS
+i=1
+prod=1
+while(i<=10):
+    prod=prod*i
+    i=i+1
+print(prod) 
+15.simple for loop
+for i in range(1,11):
+    print(i)
+#jump or step value
+for j in range(2,11,2):
+    print(j)
+
+16.  WHWTHER THE NUMBER IS EVEN POSITIVE OR EVEN NEGITIVE OR ODD POSITIVE OR ODD NEGITIVE
+num=int(input("enter the number"))
+if(num%2==0 and num>0):
+    print("the number is even positive")
+elif(num%2==0 and num<0):
+    print("the number is even negitive")
+elif(num%2==1 and num>0):
+    print("the number is odd positive")
+else:
+    print("the number is odd positive")
+
+17.printing whether the given num is float or int
+# first method
+n=8.9
+if(n==int(n)):
+    print("integer")
+elif(n==float(n)):
+    print("float")
+# second method
+n=2
+if isinstance(n,float)==True:
+    print("float")
+else:
+    print("integer")
+# third method
+n=2
+if n%1==0:
+    print("integer")
+else:
+    print("float")
+# fourth method
+n=1
+if type(num)==int:
+    print("integer")
+else:
+    print("float")
+#method
+n=10.3
+result=n-int(n)
+if(result>0 and result!=0):
+    print("float")
+else:
+    print("integer")
+
+    
+    
+
+
+
+        
+        
+
+
+
+
+
+
+

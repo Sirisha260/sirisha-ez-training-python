@@ -1,0 +1,36 @@
+--BITWISE OPERATORS: 
+0's and 1's
+the operation will be faster
+work will be efficient
+Sending data in network to network 0,1 or ON-OFF,True-False  
+--bitwise and,or,nor,xor,left shit,right shift
+bitwise and(&)
+bitwise or(|)
+bitwise not(~) alos called one's complement
+bitwise xor(^)
+bitwsie left shift(<<)
+bitwise right shift (>>)
+
+--MULTIPLE INPUTS
+a=list(map(int,input().strip().split(" ")))
+--cannot mix int and float only one type can be used
+--strip is for space
+
+--end and seperate in a function
+--CONDITIONAL STATEMENTS:
+1.if
+2.if else
+3.else if
+4.else if ladder
+5.nested if
+
+--problems on integers and if loops
+--while loop
+--for loop :
+works with range (generates sequence on numbers)
+(1,n+1)prints upto n numbers
+in-membership operator
+is=identity operator
+randommodule:
+randrange is the function
+

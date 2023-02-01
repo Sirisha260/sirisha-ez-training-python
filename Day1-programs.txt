@@ -1,0 +1,65 @@
+#simple float calculation sam has 75 candys he gave half to kumar kumar again gave half of the candys to sam how many candys sam have.
+Kumar = 75
+Sam =Kumar/2
+Kumar = (Kumar-Sam)+Sam/2
+Sam=Sam/2
+print("candys kumar have: ",float(Kumar))
+print("candys sam have: ",float(Sam))
+
+#datatypes
+n1=int(input("Enter First Integer : "))
+n2=int(input("Enter Second Integer : "))    
+n3=int(input("Enter Third Integer : "))
+f1=float(input("Enter First Float : "))
+f2=float(input("Enter Second Float : "))
+f3=float(input("Enter Third Float : "))
+s1=input("Enter First String : ")
+s2=input("Enter Second String : ")
+c=complex(input("Enter Complex number : "))
+print("First Integer: ",n1)
+print("Second Integer: ",n2)
+print("Third Integer: ",n1)
+print("First Float: ",f1)
+print("Second Float: ",f2)
+print("Third Float: ",f3)
+print("First String:" ,s1)
+print("Second String: " ,s2)
+print("First Complex number: ",c)
+
+#unicodes
+(chr(3114)+chr(3110)+chr(3149)+chr(3118)+chr(3134)+chr(3125)+chr(3108)+chr(3135))
+
+#swap
+n1=9
+n2=4
+print(n1)
+print(n2)
+n2,n1=n1,n2
+print(n1)
+print(n2)
+
+----another method
+m=10
+n=5
+m=m+n
+n=m-n
+m=m-n
+print(m)
+print(n)
+
+#swap using temp
+n1=3
+n2=4
+print("n1 value: ",n1)
+print("n2 value: ",n2)
+temp=n1
+n1=n2
+n2=temp
+print("n1 value: ",n1)
+print("n2 value: ",n2)
+
+#float number print
+n1=36.32
+n2=56.19
+n3=10
+print(float((3*n1)+n2)-n3)

@@ -1,0 +1,209 @@
+DAY3-content
+
+*In python list are ued to store multiple variables.
+Ex:L=[1,4,7.4,'sam']
+it contains 4 elements
+*Index starts with 0 and n-1 having n elements.
+>>>L=[1,4,7.4,'sam']
+>>> L
+[1, 4, 7.4, 'sam']
+>>> L[0]
+1
+>>> L[2:3]
+[7.4]
+>>> L[2:4]
+[7.4, 'sam']
+>>> L[0:]
+[1, 4, 7.4, 'sam']
+>>> L[:3]
+[1, 4, 7.4]
+>>> L[-1]
+'sam'
+>>> L[::-1] #reversing list
+['sam', 7.4, 4, 1]
+>>> type(L)
+<class 'list'>
+append()-add an element at end
+extend()- add a list to another list
+insert()-inset based on given index
+remove()-removes an element
+pop()-removes element based on list index
+clear()-deletes all elements
+index()-returns index of 1st matched item
+count()-returns the count
+sort()-arrange elements in ascending order
+reverse()-reverse the list
+copy()-returns copy of the list
+>>> L=[1,1,4,1,6,4,1,2]
+>>> len(L)
+8
+>>> L.count(1)
+4
+>>> L.append(23)
+>>> L
+[1, 1, 4, 1, 6, 4, 1, 2, 23]
+>>> L.extend([24,25,26])
+>>> L
+[1, 1, 4, 1, 6, 4, 1, 2, 23, 24, 25, 26]
+>>> L.remove(1)
+>>> L
+[1, 4, 1, 6, 4, 1, 2, 23, 24, 25, 26]
+>>> L.pop(-2)
+25
+>>> L
+[1, 4, 1, 6, 4, 1, 2, 23, 24, 26]
+>>> L.pop(9)
+26
+>>> L
+[1, 4, 1, 6, 4, 1, 2, 23, 24]
+>>> L.index(4)
+1
+>>> L.sort()
+>>> L
+[1, 1, 1, 2, 4, 4, 6, 23, 24]
+>>> L.reverse()
+>>> L
+[24, 23, 6, 4, 4, 2, 1, 1, 1]
+>>> L.insert(2,12)
+>>> L
+[24, 23, 12, 6, 4, 4, 2, 1, 1, 1]
+>>>L.clear()
+>>> L
+[]
+1.create a list with 10 items print the elements one by one
+2.create a list with 5 float nos findout and display sum and average of list
+3.after creating alist with 6 elements from user extract only even nmubers and print
+
+SET:
+methos in set
+>>> s1={1,2,3,5,6}
+>>> print(s1)
+{1, 2, 3, 5, 6}
+>>> type(s1)
+<class 'set'>
+>>> s1.add(7)
+>>> print(s1)
+{1, 2, 3, 5, 6, 7}
+>>> s1.update([20,40])
+>>> print(s1)
+{1, 2, 3, 5, 6, 7, 40, 20}
+>>> s1.discard(7)
+>>> print(s1)
+{1, 2, 3, 5, 6, 40, 20}
+>>> s1.remove(4)
+Traceback (most recent call last):
+  File "<pyshell#10>", line 1, in <module>
+    s1.remove(4)
+KeyError: 4
+>>> s1.remove(40)
+>>> print(s1)
+{1, 2, 3, 5, 6, 20}
+
+SET OPERATIONS:
+>>> s1={1,2,3}
+>>> s2={4,5,6,1,2}
+>>> s1|s2
+{1, 2, 3, 4, 5, 6}
+>>> s1.union(s2)
+{1, 2, 3, 4, 5, 6}
+>>> s1&s2
+{1, 2}
+>>> s1.intersection(s2)
+{1, 2}
+>>> s1-s2
+{3}
+>>> s1.difference(s2)
+{3}
+>>> s2-s1
+{4, 5, 6}
+>>> s2.difference(s1)
+{4, 5, 6}
+***
+>>> s={1,2,3}
+>>> s1={1,2,3,4}
+>>> s1.issuperset(s)
+True
+****returns the elements which are not common in both sets
+>>> s1={1,2,3,4,5,10}
+>>> s2={4,1,9,2,10}
+>>> s1^s2
+{3, 5, 9}
+>>> print(s1.symmetric_difference(s2))
+{3, 5, 9}
+TUPLE:
+cannot change value once created
+ordered
+can fetch using t[index]
+count and index--methods
+count is allowed so duplication is allowed but not in set.
+Ex:
+>>> t=(4,3,4,9.6,"ice cream")
+>>> type(t)
+<class 'tuple'>
+>>> t.count(4)
+2
+>>> t.index(4)
+0
+>>> t.index(9.6)
+3
+
+DICTIONARY:
+Dictionary contains elements with 2 units (key-value) and keys must be unique.
+ex:
+>>> d={1:"one",2:"two"}
+>>> d
+{1: 'one', 2: 'two'}
+>>> type(d)
+<class 'dict'>
+>>> d.keys()
+dict_keys([1, 2])
+>>> d.values()
+dict_values(['one', 'two'])
+>>> d.items()
+dict_items([(1, 'one'), (2, 'two')])
+>>> d={'siri':'human','anu':'animal'}
+>>> type(d)
+<class 'dict'>
+>>> d.keys()
+dict_keys(['siri', 'anu'])
+>>> d.values()
+dict_values(['human', 'animal'])
+>>> d.get('siri')
+'human'
+>>> d['siri']
+'human'
+>>> i=['hi','hello']
+>>> dict.fromkeys(i)
+{'hi': None, 'hello': None}
+>>> {'hi': None, 'hello': None}
+{'hi': None, 'hello': None}
+>>> dict.fromkeys(i,50)
+{'hi': 50, 'hello': 50}
+>>> {}.fromkeys(i,100)
+{'hi': 100, 'hello': 100}
+>>> s=dict.fromkeys(i,100)
+>>> s
+{'hi': 100, 'hello': 100}
+>>> d.items()
+dict_items([('siri', 'human'), ('anu', 'animal')])
+*******
+>>> i={1:'one',2:'two',3:'three'}
+>>> i
+{1: 'one', 2: 'two', 3: 'three'}
+>>> i.update({4:'four'})
+>>> i
+{1: 'one', 2: 'two', 3: 'three', 4: 'four'}
+>>> i.pop(1)
+'one'
+>>> i
+{2: 'two', 3: 'three', 4: 'four'}
+>>> i.popitem()
+(4, 'four')
+>>> i
+{2: 'two', 3: 'three'}
+>>> i.setdefault(8)
+>>> i
+{2: 'two', 3: 'three', 8: None}
+>>> i[8]="eight"
+>>> i
+{2: 'two', 3: 'three', 8: 'eight'}

@@ -1,0 +1,110 @@
+d={n:n*n for n in range(1,5)}
+print(d)
+
+#calculating product price for 5 units
+old={'rice':6,'dal':120,'oil':150}
+new={product:price*5 for (product,price)in old.items()}
+print(new)
+#with Checks
+real={'siri':20,'dad':54,'mom':50}
+now={name:age for (name,age) in real.items()if(age>45)}
+print(now)
+
+#create a list with 8 customers names display  a dictionary which has customer names along with the discounts for them from a particular shop.
+import random
+cust=['a','b','c','d','e','f','g','h']
+cust_dict={names:random.randint(1,100) for names in cust}
+print(cust_dict)
+#
+L1=['a','b','c']
+L2=[1,2,3]
+d={a:b for (a,b) in zip(L1,L2)}
+print(d)
+
+# create 2 lists 1st list1 have 5 stu names and list2 has student total marks 500. calculate percentage and form dictionary having student names aseys and percentage as value
+L1=['sam','ram','siri','lucky','santhu']
+L2=[322,456,489,300,267]
+new={name:marks*0.2 for (name,marks) in zip(L1,L2)}
+print(new)
+#2nd method
+import random
+stu_names=list(map(str,input("enter names: ").split()))
+marks=[]
+for i in range(len(stu_names)):
+    a=random.randint(100,500)*0.2
+    marks.append(a)
+new={name:marks for (name,marks) in zip(stu_names,marks)}
+print(new)
+#get 1 string as input along with a character findout and display whether that particular character is present in string or not.
+#check whether the given string is palindrome or nor
+#after taking input string.check if ur string contain space or not if yes count no.of spaces in the string and printout.
+
+#code1
+s=input("enter:")
+print(s)
+chr=input("enter char: ")
+for i in s:
+    if(i==chr):
+        flag=1
+        break
+    else:
+        flag=0
+if flag==1:
+    print("present")
+else:
+    print("not present")
+
+#code 1 sol2
+s=str(input("enter:").split( ))
+print(s)
+chr=str(input("enter char: "))
+if chr in s:
+    print("yes")
+else:
+    print("no")
+
+#code1 sol3    
+s=input("enter:")
+print(s)
+chr=input("enter char: ")   
+a="yes" if chr in s else no
+print(a)
+
+#code2
+s=input("Enter: ")
+if(s[:]==s[::-1]):
+    print("palindrome")
+else:
+    print("not palindrome")
+        
+#code3
+s=input("Enter:")
+count=0
+for i in s:
+    if(i==" "):
+        count=count+1
+print(count)
+#create a list with vowels get one string as input count vowels from the string and display the result.
+L=['a','e','i','o','u']
+s=input("Enter String: ")
+count=0
+for i in s:
+    for j in L:
+        if(i==j):
+            count+=1
+print(count)
+
+#MATH MODULE
+import math
+print("CEIL 12.5:",math.ceil(12.5))
+print("FLOOR 12.5:",math.floor(12.5))
+print("SQRT 345:",math.sqrt(345))
+print("FACTORIAL 3:",math.factorial(3))
+print("POWER 2,3: ",math.pow(2,3))
+print("REMAINDER 10,3: ",math.fmod(10,3))
+a,b=divmod(10,3)
+print(a,b)
+
+
+
+

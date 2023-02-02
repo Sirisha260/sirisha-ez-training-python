@@ -1,0 +1,101 @@
+String:
+enclosed in single or double quotes.
+
+ex:
+>>> "hi i'am "siri""
+SyntaxError: invalid syntax
+>>> "hi i'am siri"
+"hi i'am siri"
+>>> 'hi i'am siri'
+SyntaxError: invalid syntax
+>>> 'hi i\'m siri'
+"hi i'm siri"
+>>> 'hi'+'hello'
+'hihello'
+>>> 'hi'+' hello'
+'hi hello'
+>>> 'hi'*2
+'hihi'
+>>> print('a'>'b')
+False
+>>> max('a','b','c')
+'c'
+>>> s=('sirisha')
+>>> s.upper()
+'SIRISHA'
+>>> s.lower()
+'sirisha'
+>>> s.capitalize()
+'Sirisha'
+>>> s.replace('h','a')
+'sirisaa'
+>>> s.strip()
+'sirisha'
+>>> s.split()
+['sirisha']
+>>> s.split('.')
+['sirisha']
+>>> s.split('s')
+['', 'iri', 'ha']
+>>> s.split('a')
+['sirish', '']
+>>> s.center(17,'*')
+'*****sirisha*****'
+>>> s.center(1,'*')
+'sirisha'
+>>> s.count('i')
+2
+>>> s.count('s',3,len(s))
+1
+>>> s.endswith('a',0,len(s))
+True
+>>> s.find('a',0,len(s))
+6
+>>> s.index('i',3,len(s))
+3
+>>> s.find('c',0,len(s))
+-1
+ >>> s="sirisha"
+>>> s
+'sirisha'
+>>> s.islower()
+True
+>>> s.isupper()
+False
+>>> s.istitle()
+False
+>>> max(s)
+'s'
+>>> min(s)
+'a'
+>>> s.startswith('hello',0,len(s))
+False
+>>> s.rfind('a',0,len(s))
+6
+>>> s.rfind('s',0,len(s))
+4
+------
+MUTABLE:
+can be changed after creation.
+SET,LIST,DICTIONARY
+IMMUTABLE:
+cannot be changed after creation.
+INT,FLOAT,STRING,BOOLEAN,TUPLE
+#int as immutale the id are different for different values.
+>>> x=200
+>>> x
+200
+>>> id(x)
+1915253024
+>>> x=400
+>>> x
+400
+>>> id(x)
+63311584
+#example for mutable here the ids are same
+>>> L=[2,3,4]
+>>> id(L)
+14286760
+>>> L.append(34)
+>>> id(L)
+14286760

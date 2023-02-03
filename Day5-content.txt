@@ -1,0 +1,23 @@
+FUNCTIONS:
+classifications:
+1.predefined functions
+2.user defined functions
+--for code reusability we use functions.
+.....lets say we want to use a particular concept multiple times in our program instead of writing the same code many times we can write it once 
+include that inside a function and can call the function whereever we need it.
+TYPES:
+1.Functions without argument and without return value
+2.Functions without argument and with return value
+3.Functions with argument and with return value
+4.Functions with argument and without return value
+
+type1 ex:
+#function without argument and return value
+def sample():
+    print("great day")
+    print("a head")
+sample()
+print("Today")
+sample()
+RECURSIVE FUNCTION:
+A function which calls itself is called as recursive function.The concept is called as recursion.

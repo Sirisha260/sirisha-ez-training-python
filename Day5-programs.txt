@@ -1,0 +1,270 @@
+#DISPLAY WHOLE YEAR CALENDER
+import calendar
+print("Full calender: ")
+print(calendar.calendar(2022))
+print("Particular month: ")
+print(calendar.month(2021,3))
+print("set first day of the week: ")
+calendar.setfirstweekday(calendar.FRIDAY)
+print(calendar.month(2021,12))#it executes in only some systems due to the configuration
+
+#program for date time
+import datetime
+a=datetime.datetime.now()
+print(a)
+sv=a.strftime("%y")#lower case
+fv=a.strftime("%Y")#upper case
+print("Year short version: ",sv)
+print("Year full version: ",fv)
+
+1.lemons  program using functiontype1. 
+2.find factors of given number using function type2
+3.print multiplication table for given number using funtype3
+4.findout some of digits of given no using functiontype4.
+#code1
+def lemon():
+    n1=int(input("lemons present: "))
+    if n1==21:
+        print("sufficient lemons present")
+    if n1>21:
+        print("lemmons more: ",(n1-21))
+    else:
+        print("lemons needed: ",(21-n1))
+
+lemon()
+
+#code2
+def factor():
+    n=int(input("Enter n value: "))
+    for i in range(1,n+1):
+        if (n%i==0):
+            print(i)
+    return(i)
+factor()
+
+#code3
+def table(n):
+    for i in range(1,11):
+        print(i,"x",n,"=",i*n)
+n=int(input("Enter n value: "))
+table(n)
+
+#code4
+def sum(n):
+    sum=0
+    for i in n:
+        sum=sum+int(i)
+    return(sum)
+n=input("Enter n value: ")
+res=sum(n)
+print(res)
+#code4 sol2
+def digits(n):
+    sum=0
+    while n!=0:
+        rem=n%10
+        sum=sum+rem
+        n=n//10
+    return (sum)
+n=int(input("enter number: "))
+res=digits(n)
+print(res)
+
+#neew code
+def add_sub(x,y):
+    sub=x-y
+    add=x+y
+    return sub,add
+n1=int(input("enter n1: "))
+n2=int(input("enter n2: "))
+res1,res2=add_sub(n1,n2)
+print(res1)
+print(res2)
+
+#function with variable length argument
+def sum(*a):
+    c=0
+    for i in a:
+        c=c+i
+    print(c)
+sum(2,3,5,1)
+
+#function without argument and return value
+def sample():
+    print("great day")
+    print("a head")
+sample()
+print("Today")
+sample()
+
+#example:2
+def multi():
+    n1=int(input("enter n1: "))
+    n2=int(input("enter n1: "))
+    n3=int(input("enter n1: "))
+    prod=n1*n2*n3
+    print(prod)
+multi()
+
+#function without argument and without return value
+def sample():
+    print("great day")
+    print("a head")
+sample()
+print("Today")
+sample()
+
+#example:2
+def multi():
+    n1=int(input("enter n1: "))
+    n2=int(input("enter n2: "))
+    n3=int(input("enter n3: "))
+    prod=n1*n2*n3
+    print(prod)
+multi()
+
+# function with out argument with return value:
+def multi():
+    n1=int(input("enter n1: "))
+    n2=int(input("enter n2: "))
+    n3=int(input("enter n3: "))
+    prod=n1*n2*n3
+    return prod
+res=multi()
+print(res)
+
+#with argument and without return value
+def multi(n1,n2,n3):
+    prod=n1*n2*n3
+    print(prod)
+multi(2,3,4)
+#user input
+def multi1(a,b,c):
+    prod=a*b*c
+    print(prod)
+n1=int(input("enter n1: "))
+n2=int(input("enter n2: "))
+n3=int(input("enter n3: "))
+multi1(n1,n2,n3)
+
+#with argument and with return value
+def multi(n1,n2,n3):
+    prod=n1*n2*n3
+    return prod
+res=multi(2,3,4)
+print(res)
+#user input
+def multi1(a,b,c):
+    prod=a*b*c
+    return prod
+n1=int(input("enter n1: "))
+n2=int(input("enter n2: "))
+n3=int(input("enter n3: "))
+res1=multi1(n1,n2,n3)
+print(res1)
+
+-----neon number
+def neon():
+    n=int(input("enter the number:"))
+    m=n*n
+    z=str(m)
+    print(type(z))
+    sum=0
+    for i in z:
+        sum=sum+int(i)
+        if(sum==n):
+            count=1
+        else:
+           count=0
+    if(count==1):
+        print("Neon")
+    else:
+        print("not neon")
+neon()
+
+#sol2
+def neon(n):
+    sum=0
+    m=n*n
+    while m!=0:
+        rem=m%10
+        sum=sum+rem
+        m=m//10
+        if(sum==n):
+            count=1
+        else:
+           count=0
+    if(count==1):
+        print("Neon")
+    else:
+        print("not neon")
+neon(10)
+
+import random as r
+x = "i love sweets"
+print(r.sample(x,2))
+#everytime it give differnt outputs
+a=[1,2,3,4,5,6]
+r.shuffle(a)#shuffle only used for list
+print(a)
+a=[1,2,3,4,5,6]
+print(r.choice(a))
+b="Welcome back"
+print(r.choice(b))
+a=r.random()
+print(a)#print random b/w 0.0 to 1.0 excludes 1.0
+print(r.randint(20,30))
+a=[10,20,30,40,50]
+print(r.choices(a,k=10))#default k should be only used to give the range of no's
+b="Hello World"
+print(r.choices(b,k=7))
+print(r.uniform(5,10))#returns the float between the given range of values
+z=dir(r)
+print(z)#to get all functions in that range
+
+def display():
+    n=int(input("Enter a number:"))
+    if (n==1):
+       display()
+    else:
+        print("over")
+display()
+
+#factorial using recursion
+def fact(n):
+    if n==0:
+        return 1
+    return n*fact(n-1)
+result=fact(5)
+print(result)
+
+#fibannoci series
+n=int(input("Enter number: "))
+a=0
+b=1
+sum=0
+count=1
+while(count <= n):
+    print(sum,end =" ")
+    count += 1
+    a = b
+    b = sum
+    sum = a+b
+
+#using recursion program to display the Fibonacci sequence
+
+def recur_fibo(n):
+   if n <= 1:
+       return n
+   else:
+       return(recur_fibo(n-1) + recur_fibo(n-2))
+
+nterms = 10
+
+# check if the number of terms is valid
+if nterms <= 0:
+   print("Plese enter a positive integer")
+else:
+   print("Fibonacci sequence:")
+   for i in range(nterms):
+       print(recur_fibo(i))

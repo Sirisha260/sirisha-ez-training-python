@@ -1,0 +1,23 @@
+EXCEPTION HANDLING:
+
+When there is exception the developer doesnot want interruption (or) disturbance in the program flow to acheive this we are using exception handling.
+3 types of errors:
+compile time----syntax error
+logical----wrong output
+runtime----infinite loop
+
+OOPS:
+Object Oriented programming structure .its an efficient concept used in all object oriented programming languages like java,python.
+For multiple reasons we use oops concept
+for ex:code reusability
+data security
+hiding data
+
+CLASS: It's a blue print
+Ex:birds,laptops
+
+OBJECT:
+It's a thing created based on class
+note:1 class can have multiple objects.
+Ex:birds is a class and objects are peacock,parrot,dove
+laptop is a class and objects are apple,hp,asus

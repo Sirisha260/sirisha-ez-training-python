@@ -1,0 +1,87 @@
+#division by 0
+a=100
+b=0
+try:
+    print(a/b)
+except Exception as e:
+    print("The number cannot be divisible with 0",e)# e gives the type of exception occured along with print statement
+print("end")
+
+#division by 0
+a=100
+b=0
+try:
+    print(a/b)
+except Exception as e:
+    print("The number cannot be divisible with 0")#gives only the print statement
+print("end")
+
+#exception 2
+a=100
+b=0
+try:
+    print("Resource open")
+    print(a/b)
+except Exception as e:
+    print("Don't give second no.as 0",e)
+finally:
+    print("Resource closed")
+
+#exception3:
+a=10
+try:
+    b=int(input("enter the number:"))
+    print("Resource open")
+    print(a/b)
+except ZeroDivisionError as e:
+    print("number cannot be divided by 0",e)
+except ValueError as e:
+    print("invalid input",e)
+except Exception as e:
+    print("Other error",e)
+finally:
+    print("Resource closed")
+
+#exception4
+x=5
+if x%2!=0:
+    raise Exception("x should be even")
+else:
+    print("x is even number...correct")
+
+class laptop():
+    def config(self):
+        print("YES")
+lenovo=laptop()#object1
+lenovo.config()#function in class called as method
+asus=laptop()#object2
+asus.config()
+
+#init called as constructor.once object is created it initializes the function.
+#Constructor
+class Employee:
+    def __init__(self,name,id):
+        self.name=name
+        self.id=id
+    def display(self):
+        print("ID: %d\nName: %s"%(self.id,self.name))
+emp1=Employee("siri",90)
+emp2=Employee("sai",32)
+emp1.display()
+emp2.display()
+
+#variables and var.access in class and method
+class computer():
+    a=10
+    b=20
+    print("Class variable inside class: ",a)
+    def config(self):
+        c=100
+        print("Yes")
+        print("Instance access: ",self.a)
+apple=computer()
+print(apple.a)
+print(apple.a+apple.b)
+dell=computer()
+print("dell",dell.a)
+dell.config()#function call we can either write apple.config()

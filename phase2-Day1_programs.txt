@@ -1,0 +1,149 @@
+#Anonymous fuction
+L=[1,2,3]
+r=map(lambda x:x+x,L)
+print(list(r))
+#map-helps to create iteration,oit returns map
+res=map(lambda n:pow(n,2),L)
+print(list(res))
+name="siri"
+(lambda name:print(name))(name)'''
+
+'''Write a program after creating a list with even numbers within the range 1to15.Now apply lambda function and create a new list which should have
+square roots of the elements.
+import math
+l=[]
+for i in range(1,15):
+    if(i%2==0):
+        print(i)
+        l.append(i)
+print(l)
+    
+res=map(lambda x:math.sqrt(x),l)
+print(list(res))
+
+#Abstraction program
+from abc import ABC,
+abstractmethod
+class abstractiondemo(ABC):
+    @abstractmethod #called decorator to make the method(function) to absstract
+    def display(self):
+        None
+    @abstractmethod
+    def show(self):
+        None
+#changing abstraction to concrete
+class demo(abstractiondemo):
+    def display(self):
+        print("Abstraction removed")
+    def show(self):
+        print("concrete")
+obj=demo()
+obj.display()
+obj.show()
+#Single inheritance
+class parent:
+    def display(self):
+        print("Parent class")
+class child(parent):
+    def show(self):
+        print("Child class")
+c=child()
+c.display()
+c.show()
+
+#example in single inheritance
+class A:
+    x=20
+class B(A):
+    def calc(self):
+        c=self.x+30
+        print(c)
+obj=B()
+obj.calc()
+#multiple inheritance
+#two classes -one child-like mom,dad ---child
+#inherits properties of mom and dad
+class mom:
+    def mdisplay(self):
+        print("mom class")
+class dad:
+    def ddisplay(self):
+        print("dad class")
+class child(mom,dad):
+    def cdisplay(self):
+        print("child class")
+c1=child()
+c1.mdisplay()
+c1.ddisplay()
+c1.cdisplay()
+
+#multilevel Inheritance
+class grandparent:
+    def display(self):
+        print("Grand parent class")
+class parent(grandparent):
+    def show(self):
+        print("Parent class")
+class child(parent):
+    def printing(self):
+        print("child class")
+obj1=child()
+obj1.display()
+obj1.show()
+obj1.printing()
+
+#Heirarchial inheritance
+class parent():
+    def pdisplay(self):
+        print("Parent class")
+class child1(parent):
+    def c1show(self):
+        print("child1 class")
+class child2(parent):
+    def c2show(self):
+        print("child2 class")
+c1=child1()
+c1.pdisplay()
+c1.c1show()
+c2=child2()
+c2.pdisplay()
+c2.c2show()
+
+#Hybrid inheritance
+class parent():
+    def pdisplay(self):
+        print("Parent class")
+class child1(parent):
+    def c1show(self):
+        print("child1 class")
+class child2(parent):
+    def c2show(self):
+        print("child2 class")
+class kid1(child1):
+    def k1display(self):
+        print("Kid1 class")
+class kid2(child1):
+    def k2display(self):
+        print("Kid2 class")
+class kidd1(child2):
+    def k1show(self):
+        print("Kidd1 class")
+class kidd2(child2):
+    def k2show(self):
+        print("Kidd2 class")
+k1=kid1()
+k1.pdisplay()
+k1.c1show()
+k1.k1display()
+k2=kid2()
+k2.pdisplay()
+k2.c1show()
+k2.k2display()
+k3=kidd1()
+k3.pdisplay()
+k3.c2show()
+k3.k1show()
+k4=kidd2()
+k4.pdisplay()
+k4.c2show()
+k4.k2show()

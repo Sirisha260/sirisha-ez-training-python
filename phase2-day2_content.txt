@@ -1,0 +1,36 @@
+polymorphism:one item or same item used for different purposes.
+two types:
+1)overloading
+a.operator overloading
+b.mehod overloading
+2)overriding:using same+ symbol for both addition and concatenation
+
+#operator overloading:using a symbol for mathematical operations.
+#method overloading:using a symbol for methods like concatenation using + symbol.
+overriding:if a method is defective or canot be used inside aderived class it will take it from its base class or parent class.
+
+--------------------------------------------DATA STRUCTURES--------------------------------------------------------------
+Linkedlist,graph,tree more important
+--helps to write efficient programs
+--linear-array/linked list/stack/queue/matrix
+--nonlinear-binarytree/heap/hashtable/graph
+linear-storing data sequentially
+nonlinear-no sequential style required
+special datastructures:list,tuple
+Static:array(size cannot be changed) and Dynamic:list,stack,queue
+---->Linked list:Train is real time example, as the name says list of items which are linked with one another is called as linked list.
+types:singly/doubly/circular linked list
+---creating linked list:
+step1:create the node
+step2:partition the node with 2segments data and none
+step3:add value into the blank node
+step4:mark the node as head
+step5:create the next node by following theabove steps
+step6:establish the link between 1st and 2nd nodes
+DISPLAY LINKEDLIST:Traversal is required from 1st node till tail node in order to display exsisting linked list.
+
+
+
+
+
+

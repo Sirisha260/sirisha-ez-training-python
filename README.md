@@ -1,1 +1,1 @@
-# sirisha-ez-training-python
+# sirisha-eztraining-python

@@ -1,0 +1,37 @@
+Types of Trees:
+Binary tree: A node can have of maximum of 2 children.
+BinaryTree Traversal:
+3 types:
+1.Inorder:left-root-right(LDR)
+2.Preorder:root-left-right(DLR)
+3.Postorder:left-right-root(LRD)
+2 tpes of treversal:
+BFS:Breadth First Search
+level order taversal
+DFS:Depth first Search . In this we have inorder,preorder,postorder
+two types of binary tree:
+1.Full binary tree:All nodes will have 0(or) 2 children
+2.Pathalogical tree or degenerate tree::All nodes will have 0(or) 1 children
+3.skewed tree:it is may be left skewed or right skewed.
+....It is having either only left nodes or right nodes
+Complete Binary Tree:
+.....Every level should be full or complete.
+.....In last if it is incomplete nodes should present at extreme left side.
+Perfect binary Tree:
+...All internal which have 2 children and leaf nodes both should be at same level.
+Balanced Tree:
+For all the nodes( height of left subtree-height of right subtree) can be 0 or 1 then it is called as balanced tree.
+A special tree called BINARY SEARCH TREE[BST]:
+All the left side elements should be lesser than its parent and all the right side should be greater than its parent.
+
+
+
+
+
+
+
+
+
+
+
+

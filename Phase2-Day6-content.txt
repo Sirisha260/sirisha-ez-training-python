@@ -1,0 +1,19 @@
+Graph: Adjacency and connection should be there.there should be root or path.
+It is combination of vertex and egdes
+types:
+1.undirected graph(with and without weight)
+2.directed graph(with and without weight)
+3.weight graph
+Representation of graph:
+......list of edges
+.......adjacency list
+........adjacency matrix
+
+BFS: In breadth first search visit a node and then move onto visit all adjacent vertices.
+DFS:In dfs after visiting a node select one adjacent vertice and explore it completely move on with other vertex.
+
+DIJKSTRAS ALGORITHM:
+It comes under greedy method where the solution for the given problem will be figured out stage by stage.
+dijkstra algorithm helps you to find out shortest path from one vertex to all the other vertices.
+Drawback:
+If weight of any edge is a -ve number.dijkstra won't work for that.
